@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFCB79D81F468DDC00BE611D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB79D71F468DDC00BE611D /* AppDelegate.swift */; };
+		AFCB79DA1F468DDC00BE611D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB79D91F468DDC00BE611D /* ViewController.swift */; };
+		AFCB79DD1F468DDC00BE611D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCB79DB1F468DDC00BE611D /* Main.storyboard */; };
+		AFCB79DF1F468DDC00BE611D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCB79DE1F468DDC00BE611D /* Assets.xcassets */; };
+		AFCB79E21F468DDC00BE611D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCB79E01F468DDC00BE611D /* LaunchScreen.storyboard */; };
+		AFCB79ED1F468DDC00BE611D /* MapboxPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB79EC1F468DDC00BE611D /* MapboxPlaygroundTests.swift */; };
+		AFCB79F81F468DDC00BE611D /* MapboxPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB79F71F468DDC00BE611D /* MapboxPlaygroundUITests.swift */; };
+		AFCB7A0A1F46C32500BE611D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCB7A091F46C32500BE611D /* Mapbox.framework */; };
+		AFCB7A0B1F46C32500BE611D /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFCB7A091F46C32500BE611D /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFCB7A0E1F46C74C00BE611D /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A0D1F46C74C00BE611D /* CustomAnnotationView.swift */; };
+		AFCB7A131F4AD44800BE611D /* MapboxAnnotationViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A121F4AD44800BE611D /* MapboxAnnotationViewViewController.swift */; };
+		AFCB7A151F4AD82000BE611D /* MapboxAddCustomSourceLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A141F4AD82000BE611D /* MapboxAddCustomSourceLayerViewController.swift */; };
+		AFCB7A171F4AD88800BE611D /* MapboxDynamicallyStyleInteractivePointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A161F4AD88800BE611D /* MapboxDynamicallyStyleInteractivePointsViewController.swift */; };
+		AFCB7A191F4ADA1300BE611D /* MapboxDynamicallyStyleALineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A181F4ADA1300BE611D /* MapboxDynamicallyStyleALineViewController.swift */; };
+		AFCB7A1B1F4ADA4F00BE611D /* MapboxBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A1A1F4ADA4F00BE611D /* MapboxBaseViewController.swift */; };
+		AFCB7A1D1F4ADD6F00BE611D /* example.geojson in Resources */ = {isa = PBXBuildFile; fileRef = AFCB7A1C1F4ADD6F00BE611D /* example.geojson */; };
+		AFCB7A1F1F4ADEFD00BE611D /* MapboxDynamicallyStyleCirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A1E1F4ADEFD00BE611D /* MapboxDynamicallyStyleCirclesViewController.swift */; };
+		AFCB7A211F4AE04100BE611D /* MapboxAddAShapeCollectionFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A201F4AE04100BE611D /* MapboxAddAShapeCollectionFeatureViewController.swift */; };
+		AFCB7A231F4AE09C00BE611D /* metro-line.geojson in Resources */ = {isa = PBXBuildFile; fileRef = AFCB7A221F4AE09C00BE611D /* metro-line.geojson */; };
+		AFCB7A251F4AE1F100BE611D /* MapboxClusterPointDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A241F4AE1F100BE611D /* MapboxClusterPointDataViewController.swift */; };
+		AFCB7A271F4AE23A00BE611D /* ports.geojson in Resources */ = {isa = PBXBuildFile; fileRef = AFCB7A261F4AE23A00BE611D /* ports.geojson */; };
+		AFCB7A291F4AE7EA00BE611D /* MapboxAddCustomCircleAnnotationViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A281F4AE7EA00BE611D /* MapboxAddCustomCircleAnnotationViewViewController.swift */; };
+		AFCB7A2B1F4AE99500BE611D /* MapboxAddMultipleAnnotationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A2A1F4AE99500BE611D /* MapboxAddMultipleAnnotationsViewController.swift */; };
+		AFCB7A2D1F4BC70800BE611D /* MapboxAnnotationModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A2C1F4BC70800BE611D /* MapboxAnnotationModelsViewController.swift */; };
+		AFCB7A2F1F4BC95500BE611D /* MapboxCustomMarkerImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A2E1F4BC95500BE611D /* MapboxCustomMarkerImageViewController.swift */; };
+		AFCB7A311F4BCA5600BE611D /* MapboxDrawAPolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A301F4BCA5600BE611D /* MapboxDrawAPolygonViewController.swift */; };
+		AFCB7A331F4BCD0F00BE611D /* MapboxDrawAGeoJSonLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A321F4BCD0F00BE611D /* MapboxDrawAGeoJSonLineViewController.swift */; };
+		AFCB7A351F4BCE2200BE611D /* MapboxAddFillExtrusionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A341F4BCE2200BE611D /* MapboxAddFillExtrusionsViewController.swift */; };
+		AFCB7A371F4BCFBF00BE611D /* MapboxChangeLightForFillExtrusionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A361F4BCFBF00BE611D /* MapboxChangeLightForFillExtrusionsViewController.swift */; };
+		AFCB7A391F4BD08900BE611D /* MapboxToggleALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A381F4BD08900BE611D /* MapboxToggleALayerViewController.swift */; };
+		AFCB7A3B1F4BD18C00BE611D /* MapboxDraggableAnnotationViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A3A1F4BD18C00BE611D /* MapboxDraggableAnnotationViewViewController.swift */; };
+		AFCB7A3D1F4BD2AF00BE611D /* MapboxRestrictMapPanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A3C1F4BD2AF00BE611D /* MapboxRestrictMapPanningViewController.swift */; };
+		AFCB7A3F1F4BD3AC00BE611D /* MapboxSelectAFeatureWithinALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A3E1F4BD3AC00BE611D /* MapboxSelectAFeatureWithinALayerViewController.swift */; };
+		AFCB7A411F4BD6BB00BE611D /* MapboxAnimateALineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A401F4BD6BB00BE611D /* MapboxAnimateALineViewController.swift */; };
+		AFCB7A431F4BD80A00BE611D /* MapboxCameraAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A421F4BD80A00BE611D /* MapboxCameraAnimationViewController.swift */; };
+		AFCB7A451F4BD8C800BE611D /* MapboxCalloutDelegateUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A441F4BD8C800BE611D /* MapboxCalloutDelegateUsageViewController.swift */; };
+		AFCB7A471F4BDA3400BE611D /* MapboxCustomCalloutViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A461F4BDA3400BE611D /* MapboxCustomCalloutViewViewController.swift */; };
+		AFCB7A491F4BDB2400BE611D /* MapboxPointConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB7A481F4BDB2400BE611D /* MapboxPointConversionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFCB79E91F468DDC00BE611D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCB79CC1F468DDC00BE611D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCB79D31F468DDC00BE611D;
+			remoteInfo = MapboxPlayground;
+		};
+		AFCB79F41F468DDC00BE611D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCB79CC1F468DDC00BE611D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCB79D31F468DDC00BE611D;
+			remoteInfo = MapboxPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFCB7A0C1F46C32500BE611D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFCB7A0B1F46C32500BE611D /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AFCB79D41F468DDC00BE611D /* MapboxPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCB79D71F468DDC00BE611D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFCB79D91F468DDC00BE611D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFCB79DC1F468DDC00BE611D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFCB79DE1F468DDC00BE611D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFCB79E11F468DDC00BE611D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFCB79E31F468DDC00BE611D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCB79E81F468DDC00BE611D /* MapboxPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCB79EC1F468DDC00BE611D /* MapboxPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxPlaygroundTests.swift; sourceTree = "<group>"; };
+		AFCB79EE1F468DDC00BE611D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCB79F31F468DDC00BE611D /* MapboxPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCB79F71F468DDC00BE611D /* MapboxPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxPlaygroundUITests.swift; sourceTree = "<group>"; };
+		AFCB79F91F468DDC00BE611D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCB7A061F46C2AC00BE611D /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "../../Downloads/mapbox-ios-sdk-3.6.1-dynamic/dynamic/Mapbox.framework"; sourceTree = "<group>"; };
+		AFCB7A091F46C32500BE611D /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		AFCB7A0D1F46C74C00BE611D /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		AFCB7A121F4AD44800BE611D /* MapboxAnnotationViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAnnotationViewViewController.swift; sourceTree = "<group>"; };
+		AFCB7A141F4AD82000BE611D /* MapboxAddCustomSourceLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAddCustomSourceLayerViewController.swift; sourceTree = "<group>"; };
+		AFCB7A161F4AD88800BE611D /* MapboxDynamicallyStyleInteractivePointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxDynamicallyStyleInteractivePointsViewController.swift; sourceTree = "<group>"; };
+		AFCB7A181F4ADA1300BE611D /* MapboxDynamicallyStyleALineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxDynamicallyStyleALineViewController.swift; sourceTree = "<group>"; };
+		AFCB7A1A1F4ADA4F00BE611D /* MapboxBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxBaseViewController.swift; sourceTree = "<group>"; };
+		AFCB7A1C1F4ADD6F00BE611D /* example.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.geojson; sourceTree = "<group>"; };
+		AFCB7A1E1F4ADEFD00BE611D /* MapboxDynamicallyStyleCirclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxDynamicallyStyleCirclesViewController.swift; sourceTree = "<group>"; };
+		AFCB7A201F4AE04100BE611D /* MapboxAddAShapeCollectionFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAddAShapeCollectionFeatureViewController.swift; sourceTree = "<group>"; };
+		AFCB7A221F4AE09C00BE611D /* metro-line.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "metro-line.geojson"; sourceTree = "<group>"; };
+		AFCB7A241F4AE1F100BE611D /* MapboxClusterPointDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxClusterPointDataViewController.swift; sourceTree = "<group>"; };
+		AFCB7A261F4AE23A00BE611D /* ports.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ports.geojson; sourceTree = "<group>"; };
+		AFCB7A281F4AE7EA00BE611D /* MapboxAddCustomCircleAnnotationViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAddCustomCircleAnnotationViewViewController.swift; sourceTree = "<group>"; };
+		AFCB7A2A1F4AE99500BE611D /* MapboxAddMultipleAnnotationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAddMultipleAnnotationsViewController.swift; sourceTree = "<group>"; };
+		AFCB7A2C1F4BC70800BE611D /* MapboxAnnotationModelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAnnotationModelsViewController.swift; sourceTree = "<group>"; };
+		AFCB7A2E1F4BC95500BE611D /* MapboxCustomMarkerImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxCustomMarkerImageViewController.swift; sourceTree = "<group>"; };
+		AFCB7A301F4BCA5600BE611D /* MapboxDrawAPolygonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxDrawAPolygonViewController.swift; sourceTree = "<group>"; };
+		AFCB7A321F4BCD0F00BE611D /* MapboxDrawAGeoJSonLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxDrawAGeoJSonLineViewController.swift; sourceTree = "<group>"; };
+		AFCB7A341F4BCE2200BE611D /* MapboxAddFillExtrusionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAddFillExtrusionsViewController.swift; sourceTree = "<group>"; };
+		AFCB7A361F4BCFBF00BE611D /* MapboxChangeLightForFillExtrusionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxChangeLightForFillExtrusionsViewController.swift; sourceTree = "<group>"; };
+		AFCB7A381F4BD08900BE611D /* MapboxToggleALayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxToggleALayerViewController.swift; sourceTree = "<group>"; };
+		AFCB7A3A1F4BD18C00BE611D /* MapboxDraggableAnnotationViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxDraggableAnnotationViewViewController.swift; sourceTree = "<group>"; };
+		AFCB7A3C1F4BD2AF00BE611D /* MapboxRestrictMapPanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxRestrictMapPanningViewController.swift; sourceTree = "<group>"; };
+		AFCB7A3E1F4BD3AC00BE611D /* MapboxSelectAFeatureWithinALayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxSelectAFeatureWithinALayerViewController.swift; sourceTree = "<group>"; };
+		AFCB7A401F4BD6BB00BE611D /* MapboxAnimateALineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAnimateALineViewController.swift; sourceTree = "<group>"; };
+		AFCB7A421F4BD80A00BE611D /* MapboxCameraAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxCameraAnimationViewController.swift; sourceTree = "<group>"; };
+		AFCB7A441F4BD8C800BE611D /* MapboxCalloutDelegateUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxCalloutDelegateUsageViewController.swift; sourceTree = "<group>"; };
+		AFCB7A461F4BDA3400BE611D /* MapboxCustomCalloutViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxCustomCalloutViewViewController.swift; sourceTree = "<group>"; };
+		AFCB7A481F4BDB2400BE611D /* MapboxPointConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxPointConversionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCB79D11F468DDC00BE611D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCB7A0A1F46C32500BE611D /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCB79E51F468DDC00BE611D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCB79F01F468DDC00BE611D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFCB79CB1F468DDC00BE611D = {
+			isa = PBXGroup;
+			children = (
+				AFCB7A091F46C32500BE611D /* Mapbox.framework */,
+				AFCB79D61F468DDC00BE611D /* MapboxPlayground */,
+				AFCB79EB1F468DDC00BE611D /* MapboxPlaygroundTests */,
+				AFCB79F61F468DDC00BE611D /* MapboxPlaygroundUITests */,
+				AFCB79D51F468DDC00BE611D /* Products */,
+				AFCB7A051F46C2AC00BE611D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCB79D51F468DDC00BE611D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCB79D41F468DDC00BE611D /* MapboxPlayground.app */,
+				AFCB79E81F468DDC00BE611D /* MapboxPlaygroundTests.xctest */,
+				AFCB79F31F468DDC00BE611D /* MapboxPlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFCB79D61F468DDC00BE611D /* MapboxPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				AFCB79D71F468DDC00BE611D /* AppDelegate.swift */,
+				AFCB79D91F468DDC00BE611D /* ViewController.swift */,
+				AFCB79DB1F468DDC00BE611D /* Main.storyboard */,
+				AFCB79DE1F468DDC00BE611D /* Assets.xcassets */,
+				AFCB79E01F468DDC00BE611D /* LaunchScreen.storyboard */,
+				AFCB79E31F468DDC00BE611D /* Info.plist */,
+				AFCB7A1C1F4ADD6F00BE611D /* example.geojson */,
+				AFCB7A221F4AE09C00BE611D /* metro-line.geojson */,
+				AFCB7A261F4AE23A00BE611D /* ports.geojson */,
+				AFCB7A0D1F46C74C00BE611D /* CustomAnnotationView.swift */,
+				AFCB7A1A1F4ADA4F00BE611D /* MapboxBaseViewController.swift */,
+				AFCB7A121F4AD44800BE611D /* MapboxAnnotationViewViewController.swift */,
+				AFCB7A141F4AD82000BE611D /* MapboxAddCustomSourceLayerViewController.swift */,
+				AFCB7A161F4AD88800BE611D /* MapboxDynamicallyStyleInteractivePointsViewController.swift */,
+				AFCB7A181F4ADA1300BE611D /* MapboxDynamicallyStyleALineViewController.swift */,
+				AFCB7A1E1F4ADEFD00BE611D /* MapboxDynamicallyStyleCirclesViewController.swift */,
+				AFCB7A201F4AE04100BE611D /* MapboxAddAShapeCollectionFeatureViewController.swift */,
+				AFCB7A241F4AE1F100BE611D /* MapboxClusterPointDataViewController.swift */,
+				AFCB7A281F4AE7EA00BE611D /* MapboxAddCustomCircleAnnotationViewViewController.swift */,
+				AFCB7A2A1F4AE99500BE611D /* MapboxAddMultipleAnnotationsViewController.swift */,
+				AFCB7A2C1F4BC70800BE611D /* MapboxAnnotationModelsViewController.swift */,
+				AFCB7A2E1F4BC95500BE611D /* MapboxCustomMarkerImageViewController.swift */,
+				AFCB7A301F4BCA5600BE611D /* MapboxDrawAPolygonViewController.swift */,
+				AFCB7A321F4BCD0F00BE611D /* MapboxDrawAGeoJSonLineViewController.swift */,
+				AFCB7A341F4BCE2200BE611D /* MapboxAddFillExtrusionsViewController.swift */,
+				AFCB7A361F4BCFBF00BE611D /* MapboxChangeLightForFillExtrusionsViewController.swift */,
+				AFCB7A381F4BD08900BE611D /* MapboxToggleALayerViewController.swift */,
+				AFCB7A3A1F4BD18C00BE611D /* MapboxDraggableAnnotationViewViewController.swift */,
+				AFCB7A3C1F4BD2AF00BE611D /* MapboxRestrictMapPanningViewController.swift */,
+				AFCB7A3E1F4BD3AC00BE611D /* MapboxSelectAFeatureWithinALayerViewController.swift */,
+				AFCB7A401F4BD6BB00BE611D /* MapboxAnimateALineViewController.swift */,
+				AFCB7A421F4BD80A00BE611D /* MapboxCameraAnimationViewController.swift */,
+				AFCB7A441F4BD8C800BE611D /* MapboxCalloutDelegateUsageViewController.swift */,
+				AFCB7A461F4BDA3400BE611D /* MapboxCustomCalloutViewViewController.swift */,
+				AFCB7A481F4BDB2400BE611D /* MapboxPointConversionViewController.swift */,
+			);
+			path = MapboxPlayground;
+			sourceTree = "<group>";
+		};
+		AFCB79EB1F468DDC00BE611D /* MapboxPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCB79EC1F468DDC00BE611D /* MapboxPlaygroundTests.swift */,
+				AFCB79EE1F468DDC00BE611D /* Info.plist */,
+			);
+			path = MapboxPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		AFCB79F61F468DDC00BE611D /* MapboxPlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCB79F71F468DDC00BE611D /* MapboxPlaygroundUITests.swift */,
+				AFCB79F91F468DDC00BE611D /* Info.plist */,
+			);
+			path = MapboxPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		AFCB7A051F46C2AC00BE611D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCB7A061F46C2AC00BE611D /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCB79D31F468DDC00BE611D /* MapboxPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCB79FC1F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlayground" */;
+			buildPhases = (
+				AFCB79D01F468DDC00BE611D /* Sources */,
+				AFCB79D11F468DDC00BE611D /* Frameworks */,
+				AFCB79D21F468DDC00BE611D /* Resources */,
+				AFCB7A0C1F46C32500BE611D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapboxPlayground;
+			productName = MapboxPlayground;
+			productReference = AFCB79D41F468DDC00BE611D /* MapboxPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFCB79E71F468DDC00BE611D /* MapboxPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCB79FF1F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlaygroundTests" */;
+			buildPhases = (
+				AFCB79E41F468DDC00BE611D /* Sources */,
+				AFCB79E51F468DDC00BE611D /* Frameworks */,
+				AFCB79E61F468DDC00BE611D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCB79EA1F468DDC00BE611D /* PBXTargetDependency */,
+			);
+			name = MapboxPlaygroundTests;
+			productName = MapboxPlaygroundTests;
+			productReference = AFCB79E81F468DDC00BE611D /* MapboxPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFCB79F21F468DDC00BE611D /* MapboxPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCB7A021F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlaygroundUITests" */;
+			buildPhases = (
+				AFCB79EF1F468DDC00BE611D /* Sources */,
+				AFCB79F01F468DDC00BE611D /* Frameworks */,
+				AFCB79F11F468DDC00BE611D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCB79F51F468DDC00BE611D /* PBXTargetDependency */,
+			);
+			name = MapboxPlaygroundUITests;
+			productName = MapboxPlaygroundUITests;
+			productReference = AFCB79F31F468DDC00BE611D /* MapboxPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCB79CC1F468DDC00BE611D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MicroStrategy;
+				TargetAttributes = {
+					AFCB79D31F468DDC00BE611D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4S9ASJUQLQ;
+						ProvisioningStyle = Automatic;
+					};
+					AFCB79E71F468DDC00BE611D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4S9ASJUQLQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFCB79D31F468DDC00BE611D;
+					};
+					AFCB79F21F468DDC00BE611D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4S9ASJUQLQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFCB79D31F468DDC00BE611D;
+					};
+				};
+			};
+			buildConfigurationList = AFCB79CF1F468DDC00BE611D /* Build configuration list for PBXProject "MapboxPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCB79CB1F468DDC00BE611D;
+			productRefGroup = AFCB79D51F468DDC00BE611D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCB79D31F468DDC00BE611D /* MapboxPlayground */,
+				AFCB79E71F468DDC00BE611D /* MapboxPlaygroundTests */,
+				AFCB79F21F468DDC00BE611D /* MapboxPlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCB79D21F468DDC00BE611D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCB7A271F4AE23A00BE611D /* ports.geojson in Resources */,
+				AFCB79E21F468DDC00BE611D /* LaunchScreen.storyboard in Resources */,
+				AFCB7A231F4AE09C00BE611D /* metro-line.geojson in Resources */,
+				AFCB79DF1F468DDC00BE611D /* Assets.xcassets in Resources */,
+				AFCB7A1D1F4ADD6F00BE611D /* example.geojson in Resources */,
+				AFCB79DD1F468DDC00BE611D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCB79E61F468DDC00BE611D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCB79F11F468DDC00BE611D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCB79D01F468DDC00BE611D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCB7A1F1F4ADEFD00BE611D /* MapboxDynamicallyStyleCirclesViewController.swift in Sources */,
+				AFCB79DA1F468DDC00BE611D /* ViewController.swift in Sources */,
+				AFCB7A351F4BCE2200BE611D /* MapboxAddFillExtrusionsViewController.swift in Sources */,
+				AFCB7A171F4AD88800BE611D /* MapboxDynamicallyStyleInteractivePointsViewController.swift in Sources */,
+				AFCB7A471F4BDA3400BE611D /* MapboxCustomCalloutViewViewController.swift in Sources */,
+				AFCB7A3D1F4BD2AF00BE611D /* MapboxRestrictMapPanningViewController.swift in Sources */,
+				AFCB7A3B1F4BD18C00BE611D /* MapboxDraggableAnnotationViewViewController.swift in Sources */,
+				AFCB7A1B1F4ADA4F00BE611D /* MapboxBaseViewController.swift in Sources */,
+				AFCB7A411F4BD6BB00BE611D /* MapboxAnimateALineViewController.swift in Sources */,
+				AFCB7A291F4AE7EA00BE611D /* MapboxAddCustomCircleAnnotationViewViewController.swift in Sources */,
+				AFCB7A331F4BCD0F00BE611D /* MapboxDrawAGeoJSonLineViewController.swift in Sources */,
+				AFCB7A2F1F4BC95500BE611D /* MapboxCustomMarkerImageViewController.swift in Sources */,
+				AFCB7A191F4ADA1300BE611D /* MapboxDynamicallyStyleALineViewController.swift in Sources */,
+				AFCB7A431F4BD80A00BE611D /* MapboxCameraAnimationViewController.swift in Sources */,
+				AFCB7A0E1F46C74C00BE611D /* CustomAnnotationView.swift in Sources */,
+				AFCB79D81F468DDC00BE611D /* AppDelegate.swift in Sources */,
+				AFCB7A451F4BD8C800BE611D /* MapboxCalloutDelegateUsageViewController.swift in Sources */,
+				AFCB7A371F4BCFBF00BE611D /* MapboxChangeLightForFillExtrusionsViewController.swift in Sources */,
+				AFCB7A2D1F4BC70800BE611D /* MapboxAnnotationModelsViewController.swift in Sources */,
+				AFCB7A131F4AD44800BE611D /* MapboxAnnotationViewViewController.swift in Sources */,
+				AFCB7A211F4AE04100BE611D /* MapboxAddAShapeCollectionFeatureViewController.swift in Sources */,
+				AFCB7A251F4AE1F100BE611D /* MapboxClusterPointDataViewController.swift in Sources */,
+				AFCB7A2B1F4AE99500BE611D /* MapboxAddMultipleAnnotationsViewController.swift in Sources */,
+				AFCB7A311F4BCA5600BE611D /* MapboxDrawAPolygonViewController.swift in Sources */,
+				AFCB7A151F4AD82000BE611D /* MapboxAddCustomSourceLayerViewController.swift in Sources */,
+				AFCB7A391F4BD08900BE611D /* MapboxToggleALayerViewController.swift in Sources */,
+				AFCB7A491F4BDB2400BE611D /* MapboxPointConversionViewController.swift in Sources */,
+				AFCB7A3F1F4BD3AC00BE611D /* MapboxSelectAFeatureWithinALayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCB79E41F468DDC00BE611D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCB79ED1F468DDC00BE611D /* MapboxPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCB79EF1F468DDC00BE611D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCB79F81F468DDC00BE611D /* MapboxPlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFCB79EA1F468DDC00BE611D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCB79D31F468DDC00BE611D /* MapboxPlayground */;
+			targetProxy = AFCB79E91F468DDC00BE611D /* PBXContainerItemProxy */;
+		};
+		AFCB79F51F468DDC00BE611D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCB79D31F468DDC00BE611D /* MapboxPlayground */;
+			targetProxy = AFCB79F41F468DDC00BE611D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFCB79DB1F468DDC00BE611D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCB79DC1F468DDC00BE611D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFCB79E01F468DDC00BE611D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCB79E11F468DDC00BE611D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFCB79FA1F468DDC00BE611D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFCB79FB1F468DDC00BE611D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFCB79FD1F468DDC00BE611D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MapboxPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MSTR.MapboxPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AFCB79FE1F468DDC00BE611D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MapboxPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MSTR.MapboxPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AFCB7A001F468DDC00BE611D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				INFOPLIST_FILE = MapboxPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MSTR.MapboxPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapboxPlayground.app/MapboxPlayground";
+			};
+			name = Debug;
+		};
+		AFCB7A011F468DDC00BE611D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				INFOPLIST_FILE = MapboxPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MSTR.MapboxPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapboxPlayground.app/MapboxPlayground";
+			};
+			name = Release;
+		};
+		AFCB7A031F468DDC00BE611D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				INFOPLIST_FILE = MapboxPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MSTR.MapboxPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MapboxPlayground;
+			};
+			name = Debug;
+		};
+		AFCB7A041F468DDC00BE611D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				INFOPLIST_FILE = MapboxPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MSTR.MapboxPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MapboxPlayground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCB79CF1F468DDC00BE611D /* Build configuration list for PBXProject "MapboxPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCB79FA1F468DDC00BE611D /* Debug */,
+				AFCB79FB1F468DDC00BE611D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCB79FC1F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCB79FD1F468DDC00BE611D /* Debug */,
+				AFCB79FE1F468DDC00BE611D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AFCB79FF1F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCB7A001F468DDC00BE611D /* Debug */,
+				AFCB7A011F468DDC00BE611D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AFCB7A021F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCB7A031F468DDC00BE611D /* Debug */,
+				AFCB7A041F468DDC00BE611D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCB79CC1F468DDC00BE611D /* Project object */;
+}
