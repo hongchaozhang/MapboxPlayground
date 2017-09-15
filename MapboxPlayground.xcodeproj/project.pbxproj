@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFBA1FD21F6BAB5E000EB912 /* MapboxGeocoderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA1FD11F6BAB5E000EB912 /* MapboxGeocoderViewController.swift */; };
+		AFBA1FD41F6BAB98000EB912 /* MapboxGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBA1FD31F6BAB98000EB912 /* MapboxGeocoder.framework */; };
+		AFBA1FD51F6BAB98000EB912 /* MapboxGeocoder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFBA1FD31F6BAB98000EB912 /* MapboxGeocoder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFCB79D81F468DDC00BE611D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB79D71F468DDC00BE611D /* AppDelegate.swift */; };
 		AFCB79DA1F468DDC00BE611D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB79D91F468DDC00BE611D /* ViewController.swift */; };
 		AFCB79DD1F468DDC00BE611D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCB79DB1F468DDC00BE611D /* Main.storyboard */; };
@@ -72,6 +75,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AFCB7A0B1F46C32500BE611D /* Mapbox.framework in Embed Frameworks */,
+				AFBA1FD51F6BAB98000EB912 /* MapboxGeocoder.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +83,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AFBA1FD11F6BAB5E000EB912 /* MapboxGeocoderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapboxGeocoderViewController.swift; path = ../../../Desktop/MapboxGeocoderViewController.swift; sourceTree = "<group>"; };
+		AFBA1FD31F6BAB98000EB912 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxGeocoder.framework; path = Carthage/Build/iOS/MapboxGeocoder.framework; sourceTree = "<group>"; };
 		AFCB79D41F468DDC00BE611D /* MapboxPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCB79D71F468DDC00BE611D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFCB79D91F468DDC00BE611D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFCB7A0A1F46C32500BE611D /* Mapbox.framework in Frameworks */,
+				AFBA1FD41F6BAB98000EB912 /* MapboxGeocoder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +161,7 @@
 		AFCB79CB1F468DDC00BE611D = {
 			isa = PBXGroup;
 			children = (
+				AFBA1FD31F6BAB98000EB912 /* MapboxGeocoder.framework */,
 				AFCB7A091F46C32500BE611D /* Mapbox.framework */,
 				AFCB79D61F468DDC00BE611D /* MapboxPlayground */,
 				AFCB79EB1F468DDC00BE611D /* MapboxPlaygroundTests */,
@@ -211,6 +219,7 @@
 				AFCB7A441F4BD8C800BE611D /* MapboxCalloutDelegateUsageViewController.swift */,
 				AFCB7A461F4BDA3400BE611D /* MapboxCustomCalloutViewViewController.swift */,
 				AFCB7A481F4BDB2400BE611D /* MapboxPointConversionViewController.swift */,
+				AFBA1FD11F6BAB5E000EB912 /* MapboxGeocoderViewController.swift */,
 			);
 			path = MapboxPlayground;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 				AFCB7A411F4BD6BB00BE611D /* MapboxAnimateALineViewController.swift in Sources */,
 				AFCB7A291F4AE7EA00BE611D /* MapboxAddCustomCircleAnnotationViewViewController.swift in Sources */,
 				AFCB7A331F4BCD0F00BE611D /* MapboxDrawAGeoJSonLineViewController.swift in Sources */,
+				AFBA1FD21F6BAB5E000EB912 /* MapboxGeocoderViewController.swift in Sources */,
 				AFCB7A2F1F4BC95500BE611D /* MapboxCustomMarkerImageViewController.swift in Sources */,
 				AFCB7A191F4ADA1300BE611D /* MapboxDynamicallyStyleALineViewController.swift in Sources */,
 				AFCB7A431F4BD80A00BE611D /* MapboxCameraAnimationViewController.swift in Sources */,
@@ -567,6 +577,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MapboxPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -584,6 +595,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MapboxPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -670,6 +682,7 @@
 				AFCB79FE1F468DDC00BE611D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFCB79FF1F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +691,7 @@
 				AFCB7A011F468DDC00BE611D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFCB7A021F468DDC00BE611D /* Build configuration list for PBXNativeTarget "MapboxPlaygroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +700,7 @@
 				AFCB7A041F468DDC00BE611D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -35,7 +35,8 @@ class ViewController: UIViewController {
                          "Camera Animation",
                          "Callout delegagte usage",
                          "Custom callout view",
-                         "Point conversion"]
+                         "Point conversion",
+                         "geocoder search"]
     let viewControllersArray: [UIViewController] = [MapboxCustomImageAnnotationViewViewController(),
                                                     MapboxAddCustomCircleAnnotationViewViewController(),
                                                     MapboxDataDrivenCirclesViewController(),
@@ -59,7 +60,8 @@ class ViewController: UIViewController {
                                                     MapboxCameraAnimationViewController(),
                                                     MapboxCalloutDelegateUsageViewController(),
                                                     MapboxCustomCalloutViewViewController(),
-                                                    MapboxPointConversionViewController()]
+                                                    MapboxPointConversionViewController(),
+                                                    MapboxGeocoderViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
